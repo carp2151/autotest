@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]">
+  <parameter name="value" value="百度一下"/>
+  <parameter name="url" value="http://www.baidu.com"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="C:/Users/lizhenghua/Desktop/autotest(failed)">
+    <classes>
+      <class name="com.lzh.autotest.test.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginSuccess"/>
+        </methods>
+      </class> <!-- com.lzh.autotest.test.LoginTest -->
+    </classes>
+  </test> <!-- C:/Users/lizhenghua/Desktop/autotest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

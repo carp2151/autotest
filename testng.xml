@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="url" value="http://www.baidu.com" />
+    <parameter name="value" value="百度一下" />
+    <test verbose="2" preserve-order="true" name="C:/Users/lizhenghua/Desktop/autotest">
+        <classes>
+            <class name="com.lzh.autotest.test.LoginTest">
+                <methods>
+                    <include name="loginSuccess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+</suite>
+
